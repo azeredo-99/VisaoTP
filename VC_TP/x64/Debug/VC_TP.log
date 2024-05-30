@@ -1,0 +1,10 @@
+﻿  main.c
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\yvals_core.h(27): STL1003: Unexpected compiler, expected C++ compiler.
+  vc.c
+  Gerando Código...
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\yvals_core.h(28,1): error C1189: #error:  Error in C++ Standard Library usage
+  (compilando o arquivo fonte 'main.c')
+  
+C:\opencv\build\include\opencv2\core.hpp(49,1): error C1189: #error:  core.hpp header must be compiled as C++
+  (compilando o arquivo fonte 'vc.c')
+  
