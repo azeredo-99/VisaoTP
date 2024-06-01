@@ -25,16 +25,18 @@ struct ColorRange {
 string identificarCor(const Vec3b& color) {
     // Definir intervalos de cores HSV para cada faixa
     vector<ColorRange> colorRanges = {
-        {Scalar(0, 100, 100), Scalar(10, 255, 255), "Vermelho"},
-        {Scalar(10, 100, 100), Scalar(20, 255, 255), "Laranja"},
-        {Scalar(20, 100, 100), Scalar(30, 255, 255), "Amarelo"},
-        {Scalar(30, 100, 100), Scalar(85, 255, 255), "Verde"},
-        {Scalar(85, 100, 100), Scalar(130, 255, 255), "Azul"},
-        {Scalar(130, 100, 100), Scalar(160, 255, 255), "Violeta"},
-        {Scalar(0, 0, 200), Scalar(180, 50, 255), "Branco"},
-        {Scalar(0, 0, 0), Scalar(180, 255, 50), "Preto"},
-        {Scalar(0, 0, 50), Scalar(180, 255, 200), "Cinza"},
-        {Scalar(0, 50, 50), Scalar(20, 255, 200), "Marrom"},
+        {Scalar(0, 70, 50), Scalar(10, 255, 255), "Vermelho"},
+        {Scalar(10, 100, 100), Scalar(25, 255, 255), "Laranja"},
+        {Scalar(25, 100, 100), Scalar(35, 255, 255), "Amarelo"},
+        {Scalar(35, 50, 50), Scalar(85, 255, 255), "Verde"},
+        {Scalar(85, 50, 50), Scalar(130, 255, 255), "Azul"},
+        {Scalar(130, 50, 50), Scalar(160, 255, 255), "Violeta"},
+        {Scalar(0, 0, 200), Scalar(180, 20, 255), "Branco"},
+        {Scalar(0, 0, 0), Scalar(180, 255, 30), "Preto"},
+        {Scalar(0, 0, 50), Scalar(180, 50, 200), "Cinza"},
+        {Scalar(0, 50, 50), Scalar(10, 100, 200), "Marrom"},
+        {Scalar(20, 50, 50), Scalar(30, 100, 200), "Ouro"},
+        {Scalar(0, 0, 150), Scalar(20, 100, 200), "Prata"}
     };
 
     Mat colorMat(1, 1, CV_8UC3, color);
